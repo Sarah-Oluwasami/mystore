@@ -4,34 +4,77 @@
     padding: 0;
 }
 
-.float-cart{
+.first-container {
     display: flex;
+    width: 90%;
     justify-content: space-between;
-    margin: 0 15px
+    border: 1px solid grey;
+    margin: 0 100px;
 }
 
-.float-cart > div:first-child{
+.second-container a{
+    border-right: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    text-decoration: none;
+    color: black;
+    margin: 0 5px;
+    padding-right: 5px;
+}
+
+.first-frame{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 20px;
+}
+
+.second-frame {
     display: flex;
 }
 
-.float-cart > div:first-child > div{
-    margin-right: 30px;
+.bag {
+    margin-right: 5px;
 }
   
-.cart > i{
-    color: rgb(1, 59, 73);
+.bag > i:first-child{
+    color: rgb(70, 100, 0);
     font-size: 50px;
 }
 
+.bag input{
+    height: 30px;
+}
 
-.cart b{
-    color: rgb(1, 59, 73);
+.bag button{
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid rgb(70, 100, 0);
+    background-color:  rgb(70, 100, 0);
+    color: aliceblue;
+}
+
+.cart > i{
+    color: rgb(70, 100, 0);
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+#text {
+    font-weight: bold;
+}
+
+
+.bag b{
+    color: rgb(70, 100, 0);
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px hidden black;
 }
 
-.cart p{
+.bag p{
     color: black;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
@@ -39,20 +82,15 @@
     width: 200px;
 }
 
-/* .cart button{
-    background-color: rgb(1, 59, 73);
-}  */
 
-
-
-
+    
     
 ul {
     position: sticky;
     top: 0;
     z-index: 1;
     list-style-type: none;
-    background-color: rgb(1, 59, 73);
+    background-color: rgb(126, 168, 28);
     margin: 5px 0px 0px 0px;
     overflow: hidden;
     width: 100%;
@@ -78,7 +116,7 @@ li #navbar{
 .home {
     clear: both;
     position: relative;
-    background-image: url('images/hijab.jpg');
+    background-image: url('images/bgsexy2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -107,45 +145,53 @@ li #navbar{
     text-align: center;
 }
 
-.floatt {
+
+.flex {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
-.float-frame {
+.flex-frame {
     display: flex;
-    width: 90%;
+    width: 80%;
+    margin: 40px 0px 40px 20px;
 }
-  
-.float{
-    padding-top: 40px;
-    padding-left: 90px;
+
+.float {
+    margin: 40px;
 }
 
 .float img{
-  width: 230px;
-  height: 200px;
-  border: 4px solid black;
-  border-radius: 20px;
+    width: 250px;
+    height: 200px;
+}
+
+.float p{
+    text-align: center;
+}
+
+.text-container{
+    width: 20%;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 #shop {
-    border: 1px solid rgb(1, 59, 73);
-    background-color: rgb(1, 59, 73);
+    border: 1px solid rgb(126, 168, 28);
+    background-color: rgb(126, 168, 28);
     width: 115px;
     color: aliceblue;
     margin-top: 10px;
+    margin-left: 60px;
 }
 
 h2 {
     margin-top: 10px;
     margin-left: 600px;
     color: aliceblue;
-    background-color: rgb(1, 59, 73);
-    border: 1px solid rgb(1, 59, 73);
+    background-color: rgb(126, 168, 28);
+    border: 1px solid rgb(126, 168, 28);
+    border-radius: 30px;
     width: 150px;
     text-align: center;
 }
@@ -155,7 +201,7 @@ h2 {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 3px solid rgb(1, 59, 73);
+    border-bottom: 3px solid rgb(70, 100, 0);
     width: 200px;
     margin-left: 0px;
     margin-top: 30px;
@@ -167,7 +213,7 @@ h2 {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 3px solid rgb(1, 59, 73);
+    border-bottom: 3px solid rgb(70, 100, 0);
     width: 200px;
     margin-left: 0px;
     margin-top: 20px;
@@ -178,15 +224,25 @@ h2 {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 3px solid rgb(1, 59, 73);
+    border-bottom: 3px solid rgb(70, 100, 0);
     width: 200px;
     margin-left: 0px;
     margin-top: 20px;
 }
 
-.float button{
+.text-container button{
     margin-top: 20px;
     margin-right: 10px;
+}
+
+.recent {
+    display: flex;
+    margin-bottom: 20px;
+} 
+
+.recent img{
+    width: 100px;
+    height: 100px;
 }
 
 .float-footer{
@@ -194,16 +250,14 @@ h2 {
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
-    background: #00000045;
+    background: #000000;
     clear: both;
     height: 300px;
-    /* margin-top: 40px; */
 }
 
 
 .float-footer-content{
     border: 5px hidden black;
-    /* margin: 20px; */
     padding: 20px;
     width:20% ;
     margin-left: auto;
@@ -242,12 +296,33 @@ h2 {
     margin-top: 5px;
 }
 
+.float-footer-content p{
+    color: aliceblue;
+  }
+  
+  #menu{
+    color: aliceblue;
+  }
+
+  #links{
+    color: aliceblue;
+  }
+
+  #knowledge{
+    color: aliceblue;
+  }
+
+  #contact{
+    color: aliceblue;
+  }
+  
+
 .float-footer-content a:link{
-    color:  black;
+    color:  aliceblue;
 }
 
 .float-footer-content a:visited{
-    color:  black;
+    color:  aliceblue;
 }
 
 .float-footer-content a:hover{
@@ -255,7 +330,7 @@ h2 {
 }
 
 .float-footer-content a:active{
-    color:  black;
+    color:  aliceblue;
 }
 .float-footer-content a{
     text-decoration: none;

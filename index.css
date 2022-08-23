@@ -6,59 +6,81 @@
 
 .first-container {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
-    border: 1px solid black;
-    margin: 0 10px;
+    border: 1px solid grey;
+    margin: 0 100px;
 }
 
 .second-container a{
-    border: 1px solid black;
+    border-right: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
     text-decoration: none;
     color: black;
     margin: 0 5px;
+    padding-right: 5px;
 }
 
-.float-cart{
+.first-frame{
     display: flex;
-    justify-content: space-between;
-    margin: 0 15px
+    justify-content: space-around;
+    margin: 40px 0 20px;
 }
 
-.float-cart > div:first-child{
+.second-frame {
     display: flex;
 }
 
-.float-cart > div:first-child > div{
-    margin-right: 30px;
+.bag {
+    margin-right: 5px;
 }
   
-.cart > i{
-    color: rgb(1, 59, 73);
+.bag > i:first-child{
+    color: black;
     font-size: 50px;
 }
 
+.bag input{
+    height: 30px;
+}
 
-.cart b{
-    color: rgb(1, 59, 73);
+.bag button{
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color:  black;
+    color: aliceblue;
+}
+
+.cart > i{
+    color: black;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+#text {
+    font-weight: bold;
+}
+
+
+.bag b{
+    color: black;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px hidden black;
 }
 
-.cart p{
+.bag p{
     color: black;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px hidden black;
     width: 200px;
 }
-
-/* .cart button{
-    background-color: rgb(1, 59, 73);
-}  */
-
-
 
 
     
@@ -67,7 +89,7 @@ ul {
     top: 0;
     z-index: 1;
     list-style-type: none;
-    background-color: rgb(1, 59, 73);
+    background-color: grey;
     margin: 5px 0px 0px 0px;
     overflow: hidden;
     width: 100%;
@@ -93,7 +115,7 @@ li #navbar{
 .home {
     clear: both;
     position: relative;
-    background-image: url('images/bgsexy3.jpg');
+    background-image: url('images/fashionable.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -122,57 +144,62 @@ li #navbar{
     text-align: center;
 }
 
-
-/*.floatt {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
+h2 {
+    margin-top: 10px;
+    margin-left: 600px;
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
 }
-
-.float-frame {
-    display: flex;
-    width: 70%;
-}
-  
-.float{
-    padding-top: 40px;
-    margin-left: 60px;
-}
-
-.float img{
-  width: 250px;
-  height: 200px;
-  border: 4px solid black;
-  border-radius: 30px;
-}
-
-.text-frame {
-    width: 30%;
-}*/
 
 .flex {
     display: flex;
-    width: ;
     justify-content: space-between;
 }
 
 .flex-frame {
     display: flex;
-    width: 50%;
+    width: 70%;
+    margin: 20px 40px 10px 40px;
+}
+
+.float {
+    margin: 30px;
 }
 
 .float img{
-    width: 200px;
-    height: 250px;
+    width: 225px;
+    height: 200px;
+}
+
+.float p{
+    text-align: center;
 }
 
 .text-container{
-    width: 40%;
+    width: 25%;
+    margin-top: 40px;
+    margin-left: 2px;
+}
+
+
+.recent {
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 30px;
+} 
+
+.recent img{
+    width: 100px;
+    height: 100px;
 }
 
 .more {
     padding-left: 40px;
+    margin-bottom: 20px;
 }
 
 .more a:link{
@@ -200,11 +227,12 @@ li #navbar{
 }
 
 #shop {
-    border: 1px solid rgb(1, 59, 73);
-    background-color: rgb(1, 59, 73);
+    border: 1px solid black;
+    background-color: black;
     width: 115px;
     color: aliceblue;
     margin-top: 10px;
+    margin-left: 60px;
 }
 
 .text #category{
@@ -212,7 +240,7 @@ li #navbar{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 3px solid rgb(1, 59, 73);
+    border-bottom: 3px solid gray;
     width: 200px;
     margin-left: 0px;
     margin-top: 30px;
@@ -224,7 +252,7 @@ li #navbar{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 3px solid rgb(1, 59, 73);
+    border-bottom: 3px solid gray;
     width: 200px;
     margin-left: 0px;
     margin-top: 20px;
@@ -235,21 +263,97 @@ li #navbar{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 3px solid rgb(1, 59, 73);
+    border-bottom: 3px solid gray;
     width: 200px;
     margin-left: 0px;
     margin-top: 20px;
 }
+
+#frame {
+    border: 2px solid black;
+    margin-left: 600px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    
+}
+
+#frame a{
+    text-decoration: none;
+    border-right: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+    border-left: none; 
+    padding: 10px;
+}
+
+#frame a:link{
+    color:  black;
+}
+
+#frame a:visited{
+    color:  black;
+}
+
+#frame a:hover{
+    color:  aliceblue;
+}
+
+#frame a:active{
+    color:  black;
+}
+
+.suscribe {
+    margin-left: 500px;
+    margin-bottom: 40px;
+}
+
+.suscribe p{
+    text-indent: 40px;
+}
+
+.suscribe input{
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 40px;
+}
+
+.suscribe b{
+    border: 10px solid black;
+    background-color: black;
+    color: aliceblue;
+}
+
 
 .float-footer{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
-    background: #00000045;
+    background: #000000;
     clear: both;
     height: 300px;
-    /* margin-top: 40px; */
+  }
+
+  .float-footer-content p{
+    color: aliceblue;
+  }
+  
+  #menu{
+    color: aliceblue;
+  }
+
+  #links{
+    color: aliceblue;
+  }
+
+  #knowledge{
+    color: aliceblue;
+  }
+
+  #contact{
+    color: aliceblue;
   }
   
   
@@ -261,6 +365,24 @@ li #navbar{
     margin-left: auto;
     margin-right: auto;
   }
+
+.float-footer-content ul{
+    border: 2px solid aliceblue;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    
+}
+
+.float-footer-content  ul a{
+    text-decoration: none;
+    border-right: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+    border-left: none; 
+    padding: 10px;
+}
   
   .float-footer-content #menu{
     font-weight: bold;
@@ -295,11 +417,11 @@ li #navbar{
   }
   
   .float-footer-content a:link{
-    color:  black;
+    color:  aliceblue;
   }
   
   .float-footer-content a:visited{
-    color:  black;
+    color:  aliceblue;
   }
   
   .float-footer-content a:hover{
@@ -307,7 +429,7 @@ li #navbar{
   }
   
   .float-footer-content a:active{
-    color:  black;
+    color:  aliceblue;
   }
   .float-footer-content a{
     text-decoration: none;

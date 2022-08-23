@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lonestore</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
 </head>
-<body style="background-color: rgb(208, 220, 231);">
+<body>
   <section class="first-container">
     <div class="select">
       <select name="language" id="language">
@@ -26,42 +26,51 @@
 
     <div class="second-container">
       <nav>
-        <a href="index.html" id="navbar">HOME </a> 
-        <a href="product.html" id="navbar">PRODUCTS</a>
-        <a href="services.html" id="navbar">OUR SERVICES</a>
-        <a href="contact.html" id="navbar">CONTACT</a>
+        <a href="index.html" id="navbar">My Account </a> 
+        <a href="product.html" id="navbar">Wishlist</a>
+        <a href="services.html" id="navbar">My Cart</a>
+        <a href="contact.html" id="navbar">Checkout</a>
+        <a href="contact.html" id="navbar">Login</a>
       </nav>
     </div>
   </section>
-    <section class="float-cart">
-      <div>
-        <div class="cart">
-          <i class="fa fa-shopping-bag"></i>
-        </div>
-        <div class="cart">
-          <p><b>loneStore</b><br>
-          YOUR SHOPPING PARTNER</p>
+
+    <section class="first-frame">
+      <div class="second-frame">
+        <div class="bag">
+          <i class="fa fa-cart-shopping"></i>
+        </div> 
+        <div class="bag">
+            <p><b>loneStore</b><br>
+            YOUR SHOPPING PARTNER</p>
         </div>
       </div>
-      <div class="cart">
-          <input type="text" placeholder="Search products, brands and categories" size="50" >
-          <button><i class="fa fa-search"></i></button>
-        </div>
+      <div class="bag">
+        <input type="text" placeholder="Search products, brands and categories" size="50" >
+        <button><i class="fa fa-search"></i></button>
+      </div>
+      <div class="bag">
+        <div class="cart"><i class="fa fa-cart-shopping"></i></div>
+        <p id="text">SHOPPING CART</p>
+      </div>
     </section>
-          <ul>
-              <li><a href="index.html" id="navbar">HOME </a> </li>
-              <li><a href="product.html" id="navbar">PRODUCTS</a></li>
-              <li><a href="services.html" id="navbar">OUR SERVICES</a></li>
-              <li><a href="contact.html" id="navbar">CONTACT</a></li>
-          </ul>
 
-          <div class="home">
-            <p>LONE STORE</p>
-            <a href="" id="link">Home/Lone Store</a>
-          </div>
+      <ul>
+        <li><a href="index.html" id="navbar">HOME </a> </li>
+        <li><a href="product.html" id="navbar">PRODUCTS</a></li>
+        <li><a href="services.html" id="navbar">OUR SERVICES</a></li>
+        <li><a href="contact.html" id="navbar">CONTACT</a></li>
+      </ul>
 
-          <!--<section class="floatt">
-              <div class="float-frame">
+      <div class="home">
+        <p>LONE STORE</p>
+        <a href="" id="link">Home/Lone Store</a>
+      </div>
+
+        <h2>Products</h2>
+          <section class="flex">
+            <div class="images-container">
+              <div class="flex-frame">
               <div class="float">
                 <img src="images/bag1.jpg" alt="">
                 <p>Stock: High Quality Gown<br>Price: #10,600</p>
@@ -81,38 +90,11 @@
               </div>
               </div>
 
-              <div class="text-frame">
-                <div class="text">
-                  <div id="category">Category</div><br>
-                  <p>Men</p><br>
-                  <p>Women</p><br>
-                  <p>Kids</p><br>
-                  <p>Electronics</p><br>
-                  <p>Sports</p>
-                </div>
-  
-                <div class="text">
-                  <div id="tags">Tags</div><br>
-                  <p>Fashion</p><br>
-                  <p>Ecommerce</p><br>
-                  <p>Shop</p><br>
-                  <p>Hand Bag</p><br>
-                  <p>Laptop</p>
-                </div>
-                
-                <div class="text">
-                  <div id="post">Recent Posts</div><br>
-                  <p>Men</p><br>
-                  <p>Women</p><br>
-                  <p>Kids</p><br>
-                  <p>Electronics</p><br>
-                  <p>Sports</p>
-                </div>
-            </div>
+             
 
-              <div class="float-frame">
+            <div class="flex-frame">
               <div class="float">
-            <img src="images/femsk1.jpg" alt="">
+                <img src="images/femsk1.jpg" alt="">
                 <p>Stock: High Quality Gown<br>Price: #10,600</p>
                 <p id="shop"> <i class="fa fa-cart-shopping"></i>Add to Cart</p>
               </div>
@@ -130,7 +112,7 @@
               </div>
               </div>
 
-              <div class="float-frame">
+              <div class="flex-frame">
               <div class="float">
               <img src="images/housedecor.jpg" alt="">
                 <p>Stock: High Quality Gown<br>Price: #10,600</p>
@@ -149,70 +131,66 @@
                 <p id="shop"> <i class="fa fa-cart-shopping"></i>Add to Cart</p>
               </div>
               </div>
-
-              
-              
-
             </div>
-          </section>--->
 
-          <section class="flex">
-            <div class="images-container">
-              <div class="flex-frame">
-              <div class="float">
-                <img src="images/bag1.jpg" alt="">
-                <p>Stock: High Quality Gown<br>Price: #10,600</p>
-                <p id="shop"> <i class="fa fa-cart-shopping"></i>Add to Cart</p>
-              </div>
-
-              <div class="float">
-                <img src="images/bag1.jpg" alt="">
-                <p>Stock: High Quality Gown<br>Price: #10,600</p>
-                <p id="shop"> <i class="fa fa-cart-shopping"></i>Add to Cart</p>
-              </div>
-              </div>
-
-              <div class="flex-frame">
-                <div class="float">
-                  <img src="images/bag1.jpg" alt="">
-                  <p>Stock: High Quality Gown<br>Price: #10,600</p>
-                  <p id="shop"> <i class="fa fa-cart-shopping"></i>Add to Cart</p>
+               <div class="text-container">
+                <div class="text">
+                  <div id="category">Category</div><br>
+                  <p>Men</p><br>
+                  <p>Women</p><br>
+                  <p>Electronics</p><br>
+                  <p>Sports</p>
                 </div>
   
-                <div class="float">
-                  <img src="images/bag1.jpg" alt="">
-                  <p>Stock: High Quality Gown<br>Price: #10,600</p>
-                  <p id="shop"> <i class="fa fa-cart-shopping"></i>Add to Cart</p>
+                <div class="text">
+                  <div id="tags">Tags</div><br>
+                  <p>Fashion</p><br>
+                  <p>Ecommerce</p><br>
+                  <p>Shop</p><br>
+                  <p>Hand Bag</p><br>
+                  <p>Laptop</p>
                 </div>
+                
+                <div class="text">
+                  <div id="post">Recent Posts</div><br>
+                  <div class="recent">
+                    <img src="images/multiplejsuit.jpeg" alt="">
+                    <p>Lorem officia iste fuga id aspernatur, nulla laboriosam nisi</p>
+                  </div>
+        
+                  <div class="recent">
+                    <img src="images/humidifier.jpg" alt="">
+                    <p>Lorem officia iste fuga id aspernatur, nulla laboriosam nisi</p>
+                  </div>
+        
+                  <div class="recent">
+                    <img src="images/shoe.jpg" alt="">
+                    <p>Lorem officia iste fuga id aspernatur, nulla laboriosam nisi</p>
+                  </div>
                 </div>
-
-            </div>
-            <div class="text-container">
-              <div class="text">
-                <div id="category">Category</div><br>
-                <p>Men</p><br>
-                <p>Women</p><br>
-                <p>Kids</p><br>
-                <p>Electronics</p><br>
-                <p>Sports</p>
-              </div>
-
-              <div class="text">
-                <div id="category">Category</div><br>
-                <p>Men</p><br>
-                <p>Women</p><br>
-                <p>Kids</p><br>
-                <p>Electronics</p><br>
-                <p>Sports</p>
-              </div>
             </div>
 
           </section>
 
+            
+            
+
           <div class="more">
-          <p><a href="product.html">Read more...</a></p>
+          <p><a href="product.html">Browse more...</a></p>
           </div>
 
+      <ul id="frame">
+        <li><a href="">1</a> </li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+      </ul>
+
+      <div class="suscribe">
+        <p><strong>SUBSCRIBE OUR NEWSLETTER</strong> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit, dolor sit amet.</p>
+        <input type="email" placeholder="Enter your Email" size="40" ><b>Subscribe</b>
+      </div>
           
     <section class="float-footer">
       <div class="float-footer-content">
@@ -244,11 +222,16 @@
 
       <div class="float-footer-content">
         <div id="contact">Contact Us</div><br>
-        <p></p><i class="fa fa-envelope"></i>: <a href="https://myaccount.google.com/">saraholuwasam <br> i43@gmail.com</a><br>
-          <i class="fa fa-phone"></i>: 08113355305<br>
-          <i class="fab fa-facebook"></i>: <a href="https://www.facebook.com/profile.php?id=100081223342671">Sarah Oluwasami</a><br>
+        <p><i class="fa fa-envelope"></i>: <a href="https://myaccount.google.com/">saraholuwasam <br> i43@gmail.com</a><br>
+          <i class="fa fa-phone"></i>: 08113355305<br></p>
+          <!--<i class="fab fa-facebook"></i>: <a href="https://www.facebook.com/profile.php?id=100081223342671">Sarah Oluwasami</a><br>
           <i class="fa-brands fa-twitter"></i>: <a href="https://twitter.com/Adenni04">@Adenni04</a><br>
-        ` <i class="fab fa-instagram"></i>: <a href="https://www.instagram.com/hadennii/">@hadennii</a><br>
+        ` <i class="fab fa-instagram"></i>: <a href="https://www.instagram.com/hadennii/">@hadennii</a><br>-->
+        <ul>
+          <li><a href=""><i class="fab fa-facebook"></i></a> </li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>  
+        </ul>
 
       </div>
     </section>

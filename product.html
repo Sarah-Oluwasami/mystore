@@ -6,24 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lonestore</title>
     <link rel="stylesheet" href="product.css ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
 </head>
-<body style="background-color: rgb(208, 220, 231);">
-    <section class="float-cart">
-      <div>
-        <div class="cart">
-          <i class="fa fa-shopping-bag"></i>
-        </div>
-        <div class="cart">
-          <p><b>loneStore</b><br>
-          YOUR SHOPPING PARTNER</p>
-        </div>
+<body>
+
+    <section class="first-container">
+      <div class="select">
+        <select name="language" id="language">
+          <option value="English">English</option>
+          <option value="Latin">Latin</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Yoruba">Yoruba</option>
+        </select>
+        <select name="currency" id="currency">
+          <option value="Naira">#Naira</option>
+          <option value="USD">$USD</option>
+          <option value="Euro">Euro</option>
+        </select>
       </div>
-      <div class="cart">
+  
+      <div class="second-container">
+        <nav>
+          <a href="index.html" id="navbar">My Account </a> 
+          <a href="product.html" id="navbar">Wishlist</a>
+          <a href="services.html" id="navbar">My Cart</a>
+          <a href="contact.html" id="navbar">Checkout</a>
+          <a href="contact.html" id="navbar">Login</a>
+        </nav>
+      </div>
+    </section>
+  
+      <section class="first-frame">
+        <div class="second-frame">
+          <div class="bag">
+            <i class="fa fa-cart-shopping"></i>
+          </div> 
+          <div class="bag">
+              <p><b>loneStore</b><br>
+              YOUR SHOPPING PARTNER</p>
+          </div>
+        </div>
+        <div class="bag">
           <input type="text" placeholder="Search products, brands and categories" size="50" >
           <button><i class="fa fa-search"></i></button>
         </div>
-    </section>
+        <div class="bag">
+          <div class="cart"><i class="fa fa-cart-shopping"></i></div>
+          <p id="text">SHOPPING CART</p>
+        </div>
+      </section>
+
     <ul>
         <li><a href="index.html" id="navbar">HOME </a> </li>
         <li><a href="product.html" id="navbar">PRODUCTS</a></li>
@@ -37,17 +69,53 @@
     </div>
 
     <h2>Female Wears</h2>
-    <section class="floatt">
-        <div class="float-frame">
-          <div class="float text">
-            <div id="category">Category</div><br>
-            <p>Men</p><br>
-            <p>Women</p><br>
-            <p>Kids</p><br>
-            <p>Electronics</p><br>
-            <p>Sports</p>
+    <section class="flex">
+     
+      <div class="text-container">
+        <div class="text">
+          <div id="category">Category</div><br>
+          <p>Men</p><br>
+          <p>Women</p><br>
+          <p>Kids</p><br>
+          <p>Electronics</p><br>
+          <p>Sports</p>
+        </div>
+
+        <div class="text">
+          <div id="tags">Tags</div>
+          <button>Fashion</button>
+          <button>Ecommerce</button>
+          <button>Slippers</button>
+          <button>Hand Bag</button>
+          <button>Sneakers</button>
+          <button>Jeans</button>
+          <button>Shirt</button>
+          <button>Heels</button>
+          <button>Shoes</button>
+          <button>Wristwatch</button>
+        </div>
+
+        <div class="text">
+          <div id="post">Recent Posts</div><br>
+          <div class="recent">
+            <img src="images/multiplejsuit.jpeg" alt="">
+            <p>Lorem officia iste fuga id aspernatur, nulla laboriosam nisi</p>
           </div>
 
+          <div class="recent">
+            <img src="images/humidifier.jpg" alt="">
+            <p>Lorem officia iste fuga id aspernatur, nulla laboriosam nisi</p>
+          </div>
+
+          <div class="recent">
+            <img src="images/shoe.jpg" alt="">
+            <p>Lorem officia iste fuga id aspernatur, nulla laboriosam nisi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="images-container">
+        <div class="flex-frame">
           <div class="float">
             <img src="images/bag3.jpg" alt="">
             <p>Stock: High Quality Bag<br>Price: #10,600</p>
@@ -65,23 +133,9 @@
             <p >Stock: High Quality Bag<br>Price: #10,600</p>
             <p id="shop"> <i class="fa fa-cart-shopping"></i>Add to Cart</p>
           </div>
-          </div>
+        </div>
 
-          <div class="float-frame">
-          <div class="float text">
-            <div id="tags">Tags</div>
-            <button>Fashion</button>
-            <button>Ecommerce</button>
-            <button>Slippers</button>
-            <button>Hand Bag</button>
-            <button>Sneakers</button>
-            <button>Jeans</button>
-            <button>Shirt</button>
-            <button>Heels</button>
-            <button>Shoes</button>
-            <button>Wristwatch</button>
-          </div>
-
+        <div class="flex-frame">
           <div class="float">
             <img src="images/heelss.jpg" alt="">
             <p >Stock: High Quality Heels<br>Price: #10,600</p>
@@ -99,17 +153,9 @@
             <p >Stock: High Quality Heels<br>Price: #10,600</p>
             <p id="shop"> <i class="fa fa-cart-shopping"></i>Add to Cart</p>
           </div>
-          </div>
+        </div>
 
-          <div class="float text">
-            <div id="post">Recent Posts</div><br>
-              <p>Men</p><br>
-              <p>Women</p><br>
-              <p>Kids</p><br>
-              <p>Electronics</p><br>
-              <p>Sports</p>
-            </div>
-
+        <div class="flex-frame">
           <div class="float">
             <img src="images/sexygown.jpg" alt="">
             <p >Stock: High Quality Gown<br>Price: #10,600</p>
@@ -127,14 +173,14 @@
             <p >Stock: High Quality Jumpsuit<br>Price: #10,600</p>
             <p id="shop"> <i class="fa fa-cart-shopping"></i>Add to Cart</p>
           </div>
-          </div>
-
         </div>
-    </section>
+    
+      </section>
 
     <h2>Male Wears</h2>
-    <section class="floatt">
-        <div class="float-frame">
+      <section class="flex">
+        <div class="images-container">
+          <div class="flex-frame">
           <div class="float">
             <img src="images/shirt.jpg" alt="">
             <p>Stock: High Quality Vintage Shirt<br>Price: #10,600</p>
@@ -160,7 +206,7 @@
           </div>
           </div>
 
-          <div class="float-frame">
+          <div class="flex-frame">
           <div class="float">
             <img src="images/malesk1.jpg" alt="">
             <p >Stock: Nike Air <br>Price: #10,600</p>
@@ -186,7 +232,7 @@
           </div>
           </div>
 
-          <div class="float-frame">
+          <div class="flex-frame">
           <div class="float">
             <img src="images/shoe.jpg" alt="">
             <p >Stock: High Quality Gown<br>Price: #10,600</p>
@@ -213,11 +259,12 @@
           </div>
 
         </div>
-    </section>
+      </section>
 
     <h2>Others</h2>
-    <section class="floatt">
-        <div class="float-frame">
+      <section class="flex">
+        <div class="images-container">
+          <div class="flex-frame">
           <div class="float">
             <img src="images/household.jpg" alt="">
             <p>Stock: High Quality Gown<br>Price: #10,600</p>
@@ -243,7 +290,7 @@
           </div>
           </div>
 
-          <div class="float-frame">
+          <div class="flex-frame">
           <div class="float">
             <img src="images/household4.jpg" alt="">
             <p >Stock: High Quality Gown<br>Price: #10,600</p>
@@ -269,7 +316,7 @@
           </div>
           </div>
 
-          <div class="float-frame">
+          <div class="flex-frame">
           <div class="float">
             <img src="images/housedecor.jpg" alt="">
             <p >Stock: High Quality Gown<br>Price: #10,600</p>
@@ -328,11 +375,11 @@
 
       <div class="float-footer-content">
         <div id="contact">Contact Us</div><br>
-        <p></p><i class="fa fa-envelope"></i>: <a href="https://myaccount.google.com/">saraholuwasam <br> i43@gmail.com</a><br>
+        <p><i class="fa fa-envelope"></i>: <a href="https://myaccount.google.com/">saraholuwasam <br> i43@gmail.com</a><br>
           <i class="fa fa-phone"></i>: 08113355305<br>
           <i class="fab fa-facebook"></i>: <a href="https://www.facebook.com/profile.php?id=100081223342671">Sarah Oluwasami</a><br>
           <i class="fa-brands fa-twitter"></i>: <a href="https://twitter.com/Adenni04">@Adenni04</a><br>
-        ` <i class="fab fa-instagram"></i>: <a href="https://www.instagram.com/hadennii/">@hadennii</a><br>
+        ` <i class="fab fa-instagram"></i>: <a href="https://www.instagram.com/hadennii/">@hadennii</a><br></p>
 
       </div>
     </section>
